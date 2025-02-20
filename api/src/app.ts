@@ -1,9 +1,12 @@
 import express from "express";
-import cnabRoutes from "./routes/cnabRoutes";
 
-import { connectDB, disconnectDB } from "./config/database";
+import cnabRoutes from "./routes/cnabRoutes";
+import { connectDB } from "./config/database";
+import { setupSwagger } from "./config/swagger";
 
 const app = express();
+
+setupSwagger(app);
 
 async function startServer() {
   try {

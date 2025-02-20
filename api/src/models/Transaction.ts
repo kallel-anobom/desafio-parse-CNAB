@@ -40,6 +40,7 @@ export interface ITransactionInput {
   time: string;
   storeOwner: string;
   storeName: string;
+  description: string;
   nature: "Entrada" | "Saída";
   signal: "+" | "-";
 }

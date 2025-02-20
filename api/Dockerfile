@@ -1,5 +1,5 @@
 # Usa a imagem do Node.js
-FROM node:20-alpine
+FROM node:23-alpine
 
 # Define o diretório de trabalho
 WORKDIR /usr/src/app
@@ -17,4 +17,6 @@ COPY . .
 EXPOSE 3001
 
 # Comando para iniciar o app
+# CMD ["tail", "-f", "/dev/null"]
 CMD ["npm", "run", "dev"]
+

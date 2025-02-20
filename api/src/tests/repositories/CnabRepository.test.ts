@@ -25,6 +25,7 @@ describe("CnabRepository", () => {
       time: "120000",
       storeOwner: "John Doe",
       storeName: "Store 1",
+      description: "Debito",
       nature: "Saída" as "Entrada" | "Saída",
       signal: "+" as "+" | "-",
     };
@@ -52,6 +53,7 @@ describe("CnabRepository", () => {
       time: "120000",
       storeOwner: "John Doe",
       storeName: "Store 1",
+      description: "Debito",
       nature: "Saída" as "Entrada" | "Saída",
       signal: "+" as "+" | "-",
     };

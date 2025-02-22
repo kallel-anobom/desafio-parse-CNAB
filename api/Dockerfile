@@ -1,22 +1,16 @@
-# Usa a imagem do Node.js
 FROM node:23-alpine
 
-# Define o diretório de trabalho
 WORKDIR /usr/src/app
 
-# Copia os arquivos package.json e package-lock.json
 COPY package*.json ./
 
-# Instala as dependências
 RUN npm install
 
-# Copia todo o código para o container
 COPY . .
 
-# Expõe a porta 3000
+RUN npm run build
+
 EXPOSE 3001
 
-# Comando para iniciar o app
-# CMD ["tail", "-f", "/dev/null"]
 CMD ["npm", "run", "dev"]
 

@@ -1,9 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
+import LoginPage from "./pages/Login/LoginPage";
 import UploadPage from "./pages/UploadPage";
 import TransactionsPage from "./pages/TransactionsPage";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 import { useAuth } from "./contexts/AuthContext";
 
@@ -20,7 +20,6 @@ function App() {
           <>
             <Route path="/upload" element={<UploadPage />} />
             <Route path="/transactions" element={<TransactionsPage />} />
-            <Route path="*" element={<Navigate to="/upload" />} />
           </>
         )}
       </Routes>

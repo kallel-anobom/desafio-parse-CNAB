@@ -1,10 +1,13 @@
 import express from "express";
+import cors from "cors";
 
 import cnabRoutes from "./routes/cnabRoutes";
 import { connectDB } from "./config/database";
 import { setupSwagger } from "./config/swagger";
 
 const app = express();
+
+app.use(cors());
 
 setupSwagger(app);
 

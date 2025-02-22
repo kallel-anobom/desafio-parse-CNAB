@@ -1,4 +1,4 @@
-import TransactionsTable from "../components/TransactionsTable";
+import TransactionsTable from "../components/TransactionsTable/TransactionsTable";
 
 const TransactionsPage = () => {
   return (

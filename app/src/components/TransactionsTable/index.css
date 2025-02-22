@@ -1,0 +1,64 @@
+/* Estilos básicos para a tabela */
+.transactions-container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  overflow-x: auto; /* Permite rolagem horizontal em telas pequenas */
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transactions-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.transactions-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.transactions-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .transactions-table {
+    font-size: 14px;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .transactions-container {
+    padding: 10px;
+  }
+
+  .transactions-table {
+    font-size: 12px;
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    padding: 6px;
+  }
+}
